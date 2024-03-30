@@ -1,5 +1,10 @@
+'use client'
 import React from 'react'
+import Cursor from '../components/cursor/cursor'
 
 export default function Page() {
-  return <h1 className='text-white text-9xl flex justify-center items-center h-screen w-full'>404 Not Found</h1>
+  return <div className='cursor-area h-screen w-screen bg-black'>
+    <Cursor />
+    <div className='h-full w-full text-7xl text-white flex items-center justify-center'>404 NOT FOUND</div>
+  </div>
 }

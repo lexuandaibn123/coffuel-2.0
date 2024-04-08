@@ -1,0 +1,39 @@
+.notification {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.newMessage {
+  position: absolute;
+  height: 5vh;
+  top: 2vh;
+  right: -100%;
+  transition: all 0.5s ease;
+  animation: start 1s ease;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 90%;
+}
+.timeMessage {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8%;
+  animation: countdown 4s linear 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes countdown {
+  to {
+    width: 0;
+  }
+}
+@keyframes start {
+  to {
+    right: 2%;
+  }
+}

@@ -1,23 +1,23 @@
-import React from 'react'
-import { Metadata } from 'next'
-import './globals.css'
- 
+import React from "react";
+import { Metadata } from "next";
+import "./globals.css";
+
 export const metadata: Metadata = {
   title: `Coffuel`,
-  description: ''
-}
+  description: "",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-        <head>
-            <link rel="icon" href="/image/logo.png" />
-        </head>
+      <head>
+        <link rel="icon" href="/image/logo.png" />
+      </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }

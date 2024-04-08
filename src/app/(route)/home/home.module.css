@@ -1,0 +1,25 @@
+/* ----------------------------------------
+# General
+---------------------------------------- */
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.boxContent {
+  height: theme(boxContent.height);
+  width: theme(boxContent.width);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .boxContent {
+    height: theme(boxContent.lgHeight);
+    width: theme(boxContent.lgWidth);
+  }
+}

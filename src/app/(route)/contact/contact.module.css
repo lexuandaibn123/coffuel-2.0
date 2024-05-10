@@ -1,3 +1,13 @@
-.form {
+.form,
+.boxContact {
   box-shadow: 0px 0px 30px rgb(173, 173, 173);
+  transition: all 0.5s linear;
+}
+.divNotification {
+  pointer-events: none;
+}
+
+.boxContact:hover {
+  background-color: theme(colors.green);
+  transform: translateY(-20px);
 }

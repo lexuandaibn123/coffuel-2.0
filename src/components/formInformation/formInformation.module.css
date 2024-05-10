@@ -13,9 +13,9 @@
 .inputText:-webkit-autofill:hover,
 .inputText:-webkit-autofill:focus,
 .inputText:-webkit-autofill:active {
-  -webkit-text-fill-color: white !important;
+  -webkit-text-fill-color: black !important;
   /* -webkit-background-clip: text; */
-  -webkit-box-shadow: 0 0 0px 1000px theme(colors.green) inset;
+  -webkit-box-shadow: none;
   /* 1000px: Đây là sự mở rộng của bóng đổ. Trong trường hợp này, bóng đổ sẽ mở rộng ra một khoảng lớn (1000px) từ vị trí của phần tử */
   /* inset: Đây là từ khóa inset, cho biết rằng bóng đổ nằm trong phần bên trong của phần tử thay vì ở ngoài. */
   transition: background-color 5000s ease-in-out 0s;

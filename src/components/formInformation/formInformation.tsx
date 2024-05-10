@@ -162,7 +162,7 @@ export default function FormInformation({
             }}
             className={`${styles.button} opacity-50 py-2 px-6 border-2 border-green text-green hover:bg-green hover:text-black rounded me-0 ms-auto`}
           >
-            Send me
+            Send
           </button>
         </div>
       </div>

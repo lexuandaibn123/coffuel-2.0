@@ -1,0 +1,105 @@
+.page1 {
+  background-image: url("/image/background.png");
+}
+.footerPage1 {
+  background-image: linear-gradient(to right bottom, #d8fbb8, #3c8694);
+}
+.page2 {
+}
+.page3 {
+}
+.page4 {
+}
+.page5 {
+}
+.logo {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.member,
+.award {
+  white-space: nowrap;
+  position: relative;
+}
+.member:before,
+.member:after,
+.award:before,
+.award:after {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.member:before,
+.award:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.member:after,
+.award:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.divVideo {
+  transition: all 1s linear;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.playBtn {
+  z-index: 2;
+}
+.playBtn:before {
+  content: "";
+  position: absolute;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  top: -20%;
+  left: -20%;
+  right: -20%;
+  bottom: -20%;
+  animation: bloom1 1.5s linear infinite;
+  opacity: 0;
+  z-index: 1;
+}
+.playBtn:after {
+  content: "";
+  position: absolute;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  top: -20%;
+  left: -20%;
+  right: -20%;
+  bottom: -20%;
+  animation: bloom2 1.5s linear infinite;
+  opacity: 0;
+  animation-delay: 0.6s;
+  z-index: 1;
+}
+@keyframes bloom1 {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes bloom2 {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

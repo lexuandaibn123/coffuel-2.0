@@ -1,0 +1,18 @@
+.sideBarAward {
+}
+.sideBarAwardElement {
+}
+@keyframes sideBarAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.sideBarAward:hover .animationSideBarAward {
+  animation-play-state: paused;
+}
+.animationSideBarAward {
+  animation: sideBarAnimation 60s linear infinite;
+}

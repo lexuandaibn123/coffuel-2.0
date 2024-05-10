@@ -23,7 +23,7 @@ const sendEmail = async (values: Values): Promise<any> => {
     values.message.length === 0
   ) {
     // Throw a CustomError instance if required information is missing
-    throw new CustomError(400, "Missing required information");
+    throw new CustomError(400, "Thiếu thông tin yêu cầu");
   }
 
   try {

@@ -1,0 +1,18 @@
+.sideBarMember {
+}
+.sideBarMemberElement {
+}
+@keyframes sideBarAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.sideBarMember:hover .animationSideBarMember {
+  animation-play-state: paused;
+}
+.animationSideBarMember {
+  animation: sideBarAnimation 30s linear infinite;
+}

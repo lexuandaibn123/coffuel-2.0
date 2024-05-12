@@ -20,7 +20,7 @@ export default function NavBar() {
   });
   return (
     <div
-      className={`${styles.navbar} h-[7.5vh] lg:h-[6vh] w-full absolute top-0 left-0 overflow-hidden`}
+      className={`${styles.navbar} h-[7.5vh] lg:h-[6vh] w-full absolute top-0 left-0`}
     >
       <div className={`h-full flex relative items-center justify-center`}>
         <div className={`h-full absolute top-0 left-0 lg:p-1`}>
@@ -29,7 +29,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div
-          className={`${styles.menu} lg:hidden absolute right-1 top-0 p-1 text-2xl`}
+          className={`${styles.menu} lg:hidden absolute right-1 top-0 p-1 text-2xl h-full flex items-center justify-center`}
         >
           ☰
         </div>

@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center justify-around w-4/5 py-20 flex-col lg:flex-row">
             <div
-              className={`${styles.boxContact} my-5 bg-white aspect-[3/2] rounded-lg h-[30vh]`}
+              className={`${styles.boxContact} my-5 bg-white aspect-[4/2] lg:aspect-[3/2] rounded-lg h-[30vh]`}
             >
               <div className="w-full h-2/3 flex items-center justify-center">
                 <img src="/icon/facebook-icon.png" alt="" className="h-1/3" />
@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
             </div>
             <div
-              className={`${styles.boxContact} my-5 bg-white aspect-[3/2] rounded-lg h-[30vh]`}
+              className={`${styles.boxContact} my-5 bg-white aspect-[4/2] lg:aspect-[3/2] rounded-lg h-[30vh]`}
             >
               <div className="w-full h-2/3 flex items-center justify-center">
                 <img src="/icon/mail-icon.png" alt="" className="h-1/3" />
@@ -63,7 +63,7 @@ export default function Contact() {
               </div>
             </div>
             <div
-              className={`${styles.boxContact} my-5 bg-white aspect-[3/2] rounded-lg h-[30vh]`}
+              className={`${styles.boxContact} my-5 bg-white aspect-[4/2] lg:aspect-[3/2] rounded-lg h-[30vh]`}
             >
               <div className="w-full h-2/3 flex items-center justify-center">
                 <img src="/icon/location-icon.png" alt="" className="h-1/3" />

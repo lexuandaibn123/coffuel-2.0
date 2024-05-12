@@ -11,7 +11,7 @@ export default function Contact() {
   const [notification, setNotification] = useState("");
   const [stateNotification, setStateNotification] = useState("");
   return (
-    <div className="h-[100vh] w-[100vw] overflow-hidden relative bg-green">
+    <div className="h-[100vh] w-[100vw] overflow-hidden relative">
       <NavBar />
       <div
         className={`${styles.divNotification} absolute w-full h-full top-[8vh] left-0`}

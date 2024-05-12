@@ -8,13 +8,13 @@ export default function About() {
       <NavBar />
       <div className={`h-[100vh] w-full overflow-y-auto z-0 mt-[8vh]`}>
         <DivRoute path={"/about"} title={"Tổng quan"} />
-        <div className={`h-fit w-full px-32`}>
+        <div className={`h-fit w-full px-5 lg:px-32`}>
           <div className="h-[10vh] w-full text-3xl font-bold flex items-center">
             <div className="w-full">Vấn đề mà chúng tôi giải quyết</div>
           </div>
-          <div className="h-[70vh] w-full flex">
-            <div className="w-1/2 h-full flex items-center justify-center">
-              <div className="h-full aspect-square">
+          <div className="h-fit lg:h-[70vh] w-full flex lg:flex-row flex-col">
+            <div className="w-full lg:w-1/2 lg:h-full flex items-center justify-center">
+              <div className="lg:w-auto w-3/4 lg:h-full aspect-square flex items-center justify-center">
                 <img
                   src="image/khung-hoang-nang-luong.png"
                   alt=""
@@ -22,7 +22,7 @@ export default function About() {
                 />
               </div>
             </div>
-            <div className="w-1/2 h-full flex items-start justify-start">
+            <div className="w-full lg:w-1/2 h-full flex items-start justify-start">
               <div className="w-full">
                 <div className="w-full text-2xl font-bold text-error py-2 text-justify">
                   Khủng hoảng năng lượng
@@ -60,8 +60,8 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="h-[70vh] w-full flex">
-            <div className="w-1/2 h-full flex items-start justify-start">
+          <div className="h-fit lg:h-[70vh] w-full flex lg:flex-row flex-col-reverse">
+            <div className="w-full lg:w-1/2 h-full flex items-start justify-start">
               <div className="w-full">
                 <div className="w-full text-2xl font-bold text-error py-2 text-justify">
                   Ô nhiễm môi trường
@@ -104,8 +104,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 h-full flex items-center justify-center">
-              <div className="h-full aspect-square">
+            <div className="w-full lg:w-1/2 lg:h-full flex items-center justify-center">
+              <div className="lg:w-auto w-3/4 lg:h-full aspect-square flex items-center justify-center">
                 <img
                   src="image/o-nhiem-moi-truong.png"
                   alt=""
@@ -115,12 +115,12 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="w-full px-32 flex items-center justify-center">
+        <div className="w-full lg:px-32 flex items-center justify-center">
           <div className="w-full">
             <img src="/image/giai-phap.png" alt="" className="w-full" />
           </div>
         </div>
-        <div className="w-full px-32 flex items-center justify-center">
+        <div className="w-full lg:px-32 flex items-center justify-center">
           <div className="w-full">
             <img src="/image/quy-trinh-thu-gom.png" alt="" className="w-full" />
           </div>

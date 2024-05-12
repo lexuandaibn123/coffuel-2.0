@@ -8,6 +8,6 @@
   transition: all 0.2s linear;
 }
 .buttonContact:hover {
-  background-color: theme(colors.green);
+  background-color: theme(colors.greenBlue);
   color: white;
 }

@@ -8,6 +8,6 @@
 }
 
 .boxContact:hover {
-  background-color: theme(colors.green);
+  background-image: linear-gradient(to right bottom, #d8fbb8, #3c8694);
   transform: translateY(-20px);
 }

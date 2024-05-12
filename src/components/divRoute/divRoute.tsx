@@ -8,7 +8,7 @@ export default function DivRoute({
 }) {
   return (
     <div className="w-full h-[25vh] bg-yellow flex items-center">
-      <div className="ps-32">
+      <div className="lg:ps-32 ps-5">
         <div className="text-3xl font-bold">{title}</div>
         <div className="text-md mt-2 italic">
           <Link href={"/"}>Trang chủ</Link> &#10132;{" "}

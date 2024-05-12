@@ -15,12 +15,12 @@ export default function Product() {
       <NavBar />
       <div className={`h-[100vh] w-full overflow-y-auto z-0 mt-[8vh]`}>
         <DivRoute path={"/product"} title={"Sản phẩm"} />
-        <div className="h-[100vh] w-full px-32 py-20">
+        <div className="h-fit lg:h-[100vh] w-full px-5 lg:px-32 py-10 lg:py-20">
           <div
-            className={`${styles.product} w-full h-full rounded-lg shadow-inner flex p-20`}
+            className={`${styles.product} w-full h-fit lg:h-full rounded-lg shadow-inner flex p-5 sm:p-20 lg:flex-row flex-col`}
           >
             <div
-              className={`${styles.divImageProduct} h-full aspect-square rounded-lg relative flex items-center justify-center`}
+              className={`${styles.divImageProduct} w-full lg:w-auto lg:h-full aspect-square rounded-lg relative flex items-center justify-center`}
             >
               <img
                 src={sourceImage}
@@ -50,7 +50,7 @@ export default function Product() {
                 </div>
               </div>
             </div>
-            <div className="h-full px-32">
+            <div className="lg:h-full lg:w-auto w-full lg:px-32 mt-[14vh] lg:mt-auto">
               <div>
                 <div className="font-bold text-2xl mb-3">
                   Viên nén sinh khối từ bã cà phê
@@ -100,9 +100,15 @@ export default function Product() {
                 <div className="w-max mt-5">
                   <Link
                     href={"/contact"}
-                    className={`${styles.buttonContact} py-2 px-5 font-bold text-green text-xl border rounded-lg`}
+                    className={`${styles.buttonContact} hidden sm:block py-2 px-5 font-bold text-greenBlue text-xl border rounded-lg`}
                   >
                     Liên hệ ngay để nhận tư vấn và đặt hàng!
+                  </Link>
+                  <Link
+                    href={"/contact"}
+                    className={`${styles.buttonContact} sm:hidden py-2 px-5 font-bold text-greenBlue text-xl border rounded-lg`}
+                  >
+                    Liên hệ ngay!
                   </Link>
                 </div>
               </div>

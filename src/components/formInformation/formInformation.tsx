@@ -160,7 +160,7 @@ export default function FormInformation({
                   setValueDisable(false);
                 });
             }}
-            className={`${styles.button} opacity-50 py-2 px-6 border-2 border-green text-green hover:bg-green hover:text-black rounded me-0 ms-auto`}
+            className={`${styles.button} opacity-50 py-2 px-6 border-2 border-greenBlue text-greenBlue hover:bg-greenBlue hover:text-black rounded me-0 ms-auto`}
           >
             Send
           </button>

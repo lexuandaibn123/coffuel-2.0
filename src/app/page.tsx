@@ -6,7 +6,6 @@ import SideBarMember from "../components/sideBarMember/sideBarMember";
 import SideBarAward from "../components/sideBarAward/sideBarAward";
 import Footer from "../components/footer/footer";
 import Video from "../components/video/video";
-import DivRoute from "../components/divRoute/divRoute";
 export default function Home(): JSX.Element {
   const [video, setVideo] = useState(false);
   return (
@@ -29,23 +28,27 @@ export default function Home(): JSX.Element {
           className={`${styles.page1} relative w-full h-[100vh] flex items-center justify-center`}
         >
           <div className="h-full w-full flex items-center justify-center flex-col">
-            <div className={`${styles.logo} text-9xl py-6`}>Coffuel</div>
+            <div className={`${styles.logo} text-5xl md:text-9xl py-6`}>
+              Coffuel
+            </div>
             <div>
               <hr />
-              <div className="font-bold italic text-5xl flex items-center justify-center py-3">
+              <div className="font-bold italic sm:text-3xl lg:text-5xl flex items-center justify-center py-1 sm:py-3">
                 REDUCE THE WASTES, CREATE THE WAYS
               </div>
               <hr />
             </div>
-            <div className="py-2 text-2xl">VIÊN NÉN NĂNG LƯỢNG TÁI TẠO</div>
+            <div className="py-2 text-sm sm:text-lg lg:text-2xl">
+              VIÊN NÉN NĂNG LƯỢNG TÁI TẠO
+            </div>
           </div>
         </div>
         <div
-          className={`${styles.page2} bg-yellow h-[100vh] w-full py-10 px-32`}
+          className={`${styles.page2} bg-yellow h-[120vh] sm:h-[100vh] w-full py-10 px-5 lg:px-32`}
         >
           <div className="h-1/2 w-full flex items-center justify-center py-2">
             <div className="w-1/2 h-full flex items-center justify-center">
-              <div className="text-justify text-lg w-full">
+              <div className="text-justify text-sm sm:text-base lg:text-lg w-full">
                 <p className="py-2">
                   Chúng tôi là Coffuel - giải pháp đổi mới trong tái chế phụ
                   phẩm công nghiệp - công nghệ tái chế bã cà phê. Chúng tôi mang
@@ -62,32 +65,36 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className="w-1/2 h-full flex items-center justify-center">
-              <img src="/image/logo-black.png" alt="" className="h-full" />
+              <img
+                src="/image/logo-black.png"
+                alt=""
+                className="sm:h-full sm:w-auto w-full"
+              />
             </div>
           </div>
           <div className="h-1/2 w-full flex items-center justify-center py-2">
             <div className="w-1/2 h-full flex items-center justify-center">
-              <div className="h-full aspect-square overflow-hidden rounded-full">
+              <div className="w-full sm:w-auto sm:h-full aspect-square overflow-hidden rounded-full">
                 <img src="/image/product.jpg" alt="" className="w-full" />
               </div>
             </div>
-            <div className="w-1/2 text-lg flex items-center justify-center">
-              <ul className="w-full">
+            <div className="w-1/2 text-sm sm:text-base lg:text-lg flex items-center justify-center">
+              <ul className="w-full ps-4 text-justify">
                 <li className="py-2">
-                  <span className="text-green text-2xl font-black">
+                  <span className="text-greenBlue lg:text-2xl font-black">
                     &#10003;
                   </span>{" "}
                   Hiệu năng vượt trội thông qua đặc tính của bã cà phê
                 </li>
                 <li className="py-2">
-                  <span className="text-green text-2xl font-black">
+                  <span className="text-greenBlue lg:text-2xl font-black">
                     &#10003;
                   </span>{" "}
                   Giảm thiểu lượng khí độc phát thải từ các nguyên tố vô cơ nhờ
                   phụ gia giảm phát thải
                 </li>
                 <li className="py-2">
-                  <span className="text-green text-2xl font-black">
+                  <span className="text-greenBlue lg:text-2xl font-black">
                     &#10003;
                   </span>{" "}
                   Vẫn giữ sự cạnh tranh về giá cả
@@ -96,12 +103,14 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className={`${styles.page3} bg-green h-[60vh] w-full flex`}>
-          <div className="h-full w-1/2 px-32 py-20">
-            <div className="font-bold text-2xl">
+        <div
+          className={`${styles.page3} bg-green h-[125vh] sm:h-[60vh] w-full flex flex-col sm:flex-row`}
+        >
+          <div className="sm:h-full w-full text-justify sm:w-1/2 px-5 lg:px-32 py-20">
+            <div className="font-bold text-xl md:text-2xl">
               Khám phá về dự án Coffuel - giải pháp xanh cho cộng đồng
             </div>
-            <div className="mt-5">
+            <div className=" mt-3 md:mt-5">
               Coffuel thực hiện chuyển đổi những phụ phẩm công nghiệp thành
               nguồn năng lượng xanh, kết hợp với những công nghệ độc quyền để
               tối ưu hóa hiệu năng sản phẩm và đồng thời giảm thiểu khí thải,
@@ -110,8 +119,8 @@ export default function Home(): JSX.Element {
               giới, hướng đến vì mục tiêu phát triển xã hội một cách bền vững.
             </div>
           </div>
-          <div className="h-full w-1/2 flex items-center justify-center p-14">
-            <div className="h-full aspect-square">
+          <div className="sm:h-full w-full sm:w-1/2 flex items-center justify-center p-6 sm:p-14">
+            <div className="sm:h-full sm:w-auto w-full aspect-square">
               <div className="h-full relative">
                 <div
                   className="absolute top-0 left-0 h-full w-full flex items-center justify-center"
@@ -136,18 +145,18 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className={`${styles.page4} h-[200vh] w-full text-justify`}>
-          <div className="h-[100vh] w-full flex py-10 px-32">
-            <div className="w-1/2 h-full flex items-center justify-start">
+        <div className={`${styles.page4} w-full text-justify`}>
+          <div className="h-[140vh] sm:h-[100vh] w-full flex flex-col sm:flex-row py-4 lg:py-10 px-5 lg:px-32">
+            <div className="w-full h-[60vh] sm:w-1/2 sm:h-full lg:w-1/2 lg:h-full flex items-center justify-center sm:justify-start">
               <img
                 src="/image/business.png"
                 alt=""
-                className="h-5/6 rounded-xl"
+                className="lg:h-5/6 lg:w-auto w-full rounded-xl"
               />
             </div>
-            <div className="w-1/2 h-full flex items-center justify-center">
+            <div className="w-full h-[100vh] sm:w-1/2 sm:h-full flex items-center justify-center ps-2">
               <div>
-                <div className="text-green font-bold text-2xl py-2">
+                <div className="text-greenBlue font-bold text-2xl py-2">
                   GIẢI PHÁP DÀNH CHO
                 </div>
                 <div className="font-bold py-2">DOANH NGHIỆP</div>
@@ -169,27 +178,27 @@ export default function Home(): JSX.Element {
                     chúng tôi có các đặc tính:
                     <ul>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
-                        </span>{" "}
+                        </span>
                         Độ bền cơ học cao giúp dễ dàng vận chuyển
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
-                        </span>{" "}
+                        </span>
                         Hiệu năng cao đảm bảo trong quá trình sản xuất
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
-                        </span>{" "}
+                        </span>
                         Giảm thiểu lượng khí độc phát thải từ các nguyên tố vô
                         cơ như Phosphorus, Nitrogen bằng cơ chế chuyển hóa, cố
                         định các nguyên tố về dạng muối vô cơ.
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Giá cả cạnh tranh
@@ -200,10 +209,10 @@ export default function Home(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="h-[100vh] w-full flex py-10  px-32">
-            <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="h-[140vh] sm:h-[100vh] w-full flex flex-col-reverse sm:flex-row py-4 lg:py-10 px-5 lg:px-32">
+            <div className="w-full h-[100vh] sm:w-1/2 sm:h-full flex items-center justify-center pe-2">
               <div>
-                <div className="text-green font-bold text-2xl py-2">
+                <div className="text-greenBlue font-bold text-2xl py-2">
                   GIẢI PHÁP DÀNH CHO
                 </div>
                 <div className="font-bold py-2">CÁ NHÂN</div>
@@ -224,38 +233,38 @@ export default function Home(): JSX.Element {
                     và du lịch sản phẩm của chúng tôi có các đặc tính:
                     <ul>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Độ bền cơ học cao giúp dễ dàng mang theo trong mọi tình
                         huống
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Gọn nhẹ dễ dàng mang theo sử dụng
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Nhiệt lượng cao đảm bảo trong quá trình sử dụng
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Không khói và không mùi đảm bảo an toàn vệ sinh
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Hình thù độc đáo và đa dạng
                       </li>
                       <li>
-                        <span className="text-green text-2xl font-black">
+                        <span className="text-greenBlue text-2xl font-black">
                           &#10003;
                         </span>{" "}
                         Giá cả cạnh tranh
@@ -265,32 +274,34 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 h-full flex items-center justify-end">
+            <div className="w-full h-[60vh] sm:w-1/2 sm:h-full flex items-center justify-center sm:justify-end">
               <img
                 src="/image/customer.png"
                 alt=""
-                className="h-5/6 rounded-xl"
+                className="lg:h-5/6 lg:w-auto w-full rounded-xl"
               />
             </div>
           </div>
         </div>
-        <div className={`${styles.page5} h-[120vh] w-full bg-yellow px-32`}>
+        <div
+          className={`${styles.page5} h-[160vh] sm:h-[120vh] w-full bg-yellow px-5 lg:px-32`}
+        >
           <div className="h-1/2 w-full flex items-center justify-center flex-col">
-            <div className="flex items-center justify-center font-bold text-3xl h-[10vh]">
-              Core Team:
+            <div className="flex items-center justify-center font-bold text-xl sm:text-3xl h-[10vh]">
+              Core Team
             </div>
             <div
-              className={`${styles.member} h-[50vh] py-5 w-full overflow-hidden`}
+              className={`${styles.member} h-[70vh] sm:h-[50vh] py-5 w-full overflow-hidden`}
             >
               <SideBarMember />
             </div>
           </div>
           <div className="h-1/2 w-full flex items-center justify-center flex-col">
-            <div className="flex items-center justify-center font-bold text-3xl h-[10vh]">
-              Các hoạt động của Coffuel:
+            <div className="flex items-center justify-center font-bold text-xl sm:text-3xl h-[10vh]">
+              Các hoạt động của Coffuel
             </div>
             <div
-              className={`${styles.award} h-[50vh] py-5 w-full overflow-hidden`}
+              className={`${styles.award} h-[70vh] sm:h-[50vh] py-5 w-full overflow-hidden`}
             >
               <SideBarAward />
             </div>
